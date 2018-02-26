@@ -1,5 +1,6 @@
 $font-stack: Helvetica;
 $primary-color: #d7d7d7;
+$menuhover: lightblue;
 
 body {
 	font: 100% $font-stack;
@@ -31,6 +32,33 @@ body {
 		}
 		h1 {
 			margin-bottom: -10px;
+		}
+	}
+
+	nav {
+		h2 {
+			display: none; // screen readers and outliner
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			li {
+				a {
+					float: left;
+					display: block;
+					padding: 25px 16px;
+					text-decoration: none;
+					color: black;
+					&:hover {
+						background-color: $menuhover;
+					}
+					:visited {
+
+					}
+				}
+			}
 		}
 	}
 
