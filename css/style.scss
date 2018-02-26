@@ -14,22 +14,6 @@ body {
 		margin-right: auto;
 	}
 
-	.about {
-		height: 350px;
-		background: url("../images/building.jpg") fixed center top;
-		background-size: cover;
-		padding: 20px;
-		text-align: justify;
-
-		color: white;
-		.content {
-			padding: 3px 10px;
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-			border-radius: 10px;
-			background-color: $overlay;
-		}
-	}
 
 	header {
 		background-color: $headercolor;
@@ -69,6 +53,70 @@ body {
 				}
 			}
 		}
+	}
+
+	.about {
+		height: 350px;
+		background: url("../images/building.jpg") fixed center top;
+		background-size: cover;
+		padding: 20px;
+		text-align: justify;
+
+		color: white;
+		.content {
+			padding: 3px 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			background-color: $overlay;
+		}
+	}
+
+	/*  SECTIONS  */
+	section {
+		clear: both;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/*  COLUMN SETUP  */
+	.col {
+		display: block;
+		float:left;
+		margin: 0% 0 0% 1.6%;
+
+		img {
+			display: block;
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		}
+
+		p {
+			text-align: justify;
+		}
+	}
+	.col:first-child { margin-left: 0; }
+
+	/*  GROUPING  */
+	.group:before,
+	.group:after { content:""; display:table; }
+	.group:after { clear:both;}
+	.group { zoom:1; /* For IE 6/7 */ }
+
+	/*  GRID OF THREE  */
+	.span_3_of_3 { width: 100%; }
+	.span_2_of_3 { width: 66.13%; }
+	.span_1_of_3 { width: 32.26%; }
+
+	/*  GO FULL WIDTH BELOW 480 PIXELS */
+	@media only screen and (max-width: 480px) {
+		.col {  margin: 1% 0 1% 0%; }
+		.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 	}
 
 	footer {
