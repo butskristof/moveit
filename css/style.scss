@@ -4,6 +4,9 @@ $menuhover: rgba(0, 0, 0, 0.1);
 $headercolor: rgba(0, 0, 0, 0.2);
 $overlay: rgba(0, 0, 0, 0.25);
 
+$selectbg: grey;
+$selectfont: white;
+
 body {
 	font: 100% $font-stack;
 	//margin: -20px; // chrome body margin compensation
@@ -16,6 +19,15 @@ body {
 		margin-right: auto;
 	}
 
+	::-moz-selection { /* Code for Firefox */
+		color: $selectfont;
+		background: $selectbg;
+	}
+
+	::selection {
+		color: $selectfont;
+		background: $selectbg;
+	}
 
 	header {
 		background-color: $headercolor;
