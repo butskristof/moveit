@@ -1,0 +1,117 @@
+/*
+Styling specific for home page
+*/
+
+/*JUMBOTRON STYLING*/
+.about {
+	/*Bootstrap-style jumbotron with parallax effect*/
+	height: 400px;
+	background: url("../images/building.jpg") fixed center top;
+	background-size: cover;
+	padding: 50px; /* inwards padding */
+	text-align: justify;
+
+	color: white; /* make text readable over picture */
+}
+
+.about .content {
+	/*TODO make text more readable*/
+	/*overlay for welcome text*/
+	padding: 10px 20px;
+	/*get rounded corners on overlay*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+	/*make overlay fill the whole image*/
+	.about {
+		padding: 0;
+		height: 300px;
+	}
+	.about .content {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+
+		padding-bottom: 0;
+
+		height: 100%;
+	}
+}
+
+/*NEWS STYLING*/
+
+#news section {
+	/*make sure section fills width without running into floats*/
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+#news a {
+	color: black;
+	text-decoration: none;
+}
+
+.col {
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: top;
+	padding: 0 0 0 1.6%;
+	margin: 0;
+}
+
+.col img {
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.col p {
+	text-align: justify;
+}
+
+.col:first-child {
+	padding-left: 0;
+}
+
+.group:before, .group:after {
+	/*display: table;*/
+}
+
+.group:after {
+	/*clear: both;*/
+}
+
+.group {
+	/*for IE6/7*/
+	zoom: 1;
+}
+
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 49%; }
+.span_1_of_3 { width: 32.26%; }
+
+@media (max-width: 480px) {
+	/*responsive: full width and stacked*/
+	.col {
+		margin: 1% 0;
+	}
+
+	.span_1_of_3, .span_2_of_3, .span_3_of_3 {
+		width: 100%;
+	}
+}

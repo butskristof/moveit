@@ -1,1 +1,132 @@
-body{font:100% Helvetica}body .content,body main,body nav,body footer{max-width:960px;margin-left:auto;margin-right:auto}body ::-moz-selection{color:#fff;background:grey}body ::selection{color:#fff;background:grey}body header{background-color:rgba(0,0,0,0.2);height:80px}body header img{height:60px;float:left;padding:10px}body header h1{margin-bottom:-10px}body nav h2{display:none}body nav ul{list-style-type:none;padding:0;margin:0;overflow:hidden}body nav ul li a{float:left;display:block;padding:25px 16px;text-decoration:none;color:black}body nav ul li a:hover{background-color:rgba(0,0,0,0.1)}body nav ul li a.active{background-color:rgba(0,0,0,0.2)}@media (max-width: 768px){body nav ul li a{float:none;padding:8px 16px}}body .about{height:350px;background:url("../images/building.jpg") fixed center top;background-size:cover;padding:20px;text-align:justify;color:white}body .about .content{padding:3px 10px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:rgba(0,0,0,0.25)}body a{color:black;text-decoration:none}body section{clear:both;padding:0px;margin:0px}body .col{display:block;float:left;margin:0% 0 0% 1.6%}body .col img{display:block;width:95%;margin-left:auto;margin-right:auto;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}body .col p{text-align:justify}body .col:first-child{margin-left:0}body .group:before,body .group:after{content:"";display:table}body .group:after{clear:both}body .group{zoom:1}body .span_3_of_3{width:100%}body .span_2_of_3{width:66.13%}body .span_1_of_3{width:32.26%}@media only screen and (max-width: 480px){body .col{margin:1% 0 1% 0%}body .span_3_of_3,body .span_2_of_3,body .span_1_of_3{width:100%}}body footer{margin-top:40px;margin-bottom:20px;border-top:solid 1px black}body footer address{float:left}body footer small{float:right}
+/*
+General site-wide styling
+*/
+
+body {
+	font-family: helvetica, sans-serif;
+	min-height: 100%;
+}
+
+h2 {
+	/*increase font size, decrease top and bottom margins*/
+	font-size: 2rem;
+	margin: 20px 0;
+}
+
+.content, main, nav, footer {
+	/*set width, alignment and margins for elements not spanning the whole width */
+	max-width: 960px;
+	min-width: 300px;
+	margin: 0 auto; /* center horizontally */
+}
+
+/*set text selection colors to complement colour scheme*/
+::selection {
+	color: white;
+	background: grey;
+}
+/*firefox compatibility*/
+::-moz-selection {
+	color: white;
+	background: grey;
+}
+
+@media (max-width: 960px) {
+	/*adjust for user agent stylesheets on mobile */
+	header, nav, .about {
+		margin: 0 -8px;
+	}
+}
+
+/*HEADER STYLING*/
+
+header {
+	height: 80px;
+}
+
+header img {
+	/*make img fit in header*/
+	height: 60px;
+	float: left;
+	padding: 10px;
+}
+
+header .text {
+	/*vertically center text in header*/
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header h1 {
+	/*adjust margins to fit in header */
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+/*NAV STYLING*/
+
+nav h2 {
+	/*for screen readers and outliners*/
+	display: none;
+}
+
+nav ul {
+	/*style to get horizontal menu bar*/
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	/*styling on a element to make the whole block clickable*/
+	float: left;
+	display: block;
+	padding: 16px;
+	text-decoration: none; /* remove underlining */
+	color: black;
+}
+
+nav ul li a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a.active {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+	nav ul li a {
+		/*remove float to get a vertical menu and decrease padding*/
+		float: none;
+		padding: 8px 16px;
+	}
+}
+
+/*FOOTER STYLING*/
+footer {
+	/*let it breathe a bit */
+	display: block;
+	clear: both;
+	margin-top: 40px;
+	margin-bottom: 20px;
+
+	padding: 20px 0;
+
+	border-top: solid 1px black;
+}
+
+footer address {
+	/*float: left;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+
+footer small {
+	/*float: right;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	text-align: right;
+}

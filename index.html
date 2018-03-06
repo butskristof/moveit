@@ -3,18 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Move-it</title>
+	<title>Home - Move-it</title>
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 	<header>
 		<div class="content">
 			<img src="images/logo/logo2.svg" alt="Move-it logo" />
-			<h1>
-				Move-it
-			</h1>
-			<p>Masters in moving</p>
+			<div class="text">
+				<h1>
+					Move-it
+				</h1>
+				<p>Masters in moving</p>
+			</div><!-- /text -->
 		</div><!-- /content -->
 	</header>
 	<nav>
@@ -31,18 +34,18 @@
 	<main>
 		<section class="about">
 			<div class="content">
-				<h2>Over ons</h2>
+				<h2>Welkom</h2>
 				<p>
 					Move-it bvba is een verhuisbedrijf gevestigd te Antwerpen. Door een jarenlange ervaring in de drukke stadsomgeving zijn wij de ideale partner om uw verhuis tot een goed einde te brengen. Een verhuis gaat immers over het behandelen van uw meest waardevolle spullen, daarom trachten wij elke opdracht steeds met de nodige finesse en professionaliteit te behandelen.
 				</p>
 			</div><!-- /content -->
 		</section>
-		<section class="content">
+		<section class="content" id="news">
 			<h2>Nieuws</h2>
 			<p>Hieronder kan u het nieuws over ons bedrijf volgen. Door op het artikel te klikken kan u het volledige verhaal lezen.</p>
 			<div class="group">
 				<div class="col span_1_of_3">
-					<a href="#">
+					<a href="html/news/news1.html">
 						<article>
 							<h3>GEZOCHT: gestolen materialen</h3>
 							<img src="http://placehold.it/400x200" alt="gestolen materialen">
@@ -73,10 +76,12 @@
 	</main>
 	<footer>
 		<address>
+			<!--TODO check semantics-->
 			Move-it bvba<br>
 			Nationalestraat 5<br>
 			2000 Antwerpen<br>
-			Belgi&euml;
+			Belgi&euml;<br>
+			+32 12 34 56 78
 		</address>
 		<small>
 			&copy; 2018 Move-it bvba
