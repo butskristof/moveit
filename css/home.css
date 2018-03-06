@@ -23,6 +23,8 @@ Styling specific for home page
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 
+	line-height: 1.2;
+
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -66,8 +68,7 @@ Styling specific for home page
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	vertical-align: top;
-	padding: 0 0 0 1.6%;
-	margin: 0;
+	padding: 0 0.8% 0 0.8%;
 }
 
 .col img {
@@ -82,23 +83,6 @@ Styling specific for home page
 
 .col p {
 	text-align: justify;
-}
-
-.col:first-child {
-	padding-left: 0;
-}
-
-.group:before, .group:after {
-	/*display: table;*/
-}
-
-.group:after {
-	/*clear: both;*/
-}
-
-.group {
-	/*for IE6/7*/
-	zoom: 1;
 }
 
 .span_3_of_3 { width: 100%; }
