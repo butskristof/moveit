@@ -6,6 +6,7 @@
 	<title>Offerte - Move-it</title>
 
 	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/offerte.css">
 </head>
 <body>
 	<header>
@@ -36,7 +37,111 @@
 		<p>Via onderstaand formulier kan u vrijblijvend een offerte aanvragen.</p>
 
 		<form action="offerte_done.html">
-			<input type="submit">
+
+			<fieldset>
+				<legend>Persoonsgegevens</legend>
+
+				<label for="firstName">Voornaam</label>
+				<input type="text" id="firstName" name="firstName" required>
+
+				<label for="lastName">Familienaam</label>
+				<input type="text" id="lastName" name="lastName" required>
+
+				<label for="phone">Telefoonnummer</label>
+				<input type="text" id="phone" name="phone" pattern="^0[1-9][0-9]{7,8}$">
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Adres van</legend>
+
+				<label for="addressFrom_street">Straat</label>
+				<input type="text" id="addressFrom_street" name="addressFrom_street">
+
+				<label for="addressFrom_nr">Huisnummer</label>
+				<input type="text" id="addressFrom_nr" name="addressFrom_nr">
+
+				<label for="addressFrom_add">Toevoeging</label>
+				<input type="text" id="addressFrom_add" name="addressFrom_add">
+
+				<label for="addressFrom_postcode">Postcode</label>
+				<input type="text" id="addressFrom_postcode" name="addressFrom_postcode">
+
+				<label for="addressFrom_place">Plaats</label>
+				<input type="text" id="addressFrom_place" name="addressFrom_place">
+
+				<label for="addressFrom_stories">Aantal verdiepingen</label>
+				<input type="text" id="addressFrom_stories" name="addressFrom_stories">
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Adres naar</legend>
+
+				<label for="addressTo_street">Straat</label>
+				<input type="text" id="addressTo_street" name="addressTo_street">
+
+				<label for="addressTo_nr">Huisnummer</label>
+				<input type="text" id="addressTo_nr" name="addressTo_nr">
+
+				<label for="addressTo_add">Toevoeging</label>
+				<input type="text" id="addressTo_add" name="addressTo_add">
+
+				<label for="addressTo_postcode">Postcode</label>
+				<input type="text" id="addressTo_postcode" name="addressTo_postcode">
+
+				<label for="addressTo_place">Plaats</label>
+				<input type="text" id="addressTo_place" name="addressTo_place">
+
+				<label for="addressTo_stories">Aantal verdiepingen</label>
+				<input type="text" id="addressTo_stories" name="addressTo_stories">
+			</fieldset>
+			
+			<fieldset>
+				<legend>Overige</legend>
+
+				<label for="type">Type verhuis</label>
+				<select name="type" id="type">
+					<option value="office">Kantoor</option>
+					<option value="house">Woning</option>
+					<option value="appartment">Appartement</option>
+				</select>
+
+				<fieldset id="services">
+					<legend>Overige diensten</legend>
+
+					<div class="checkbox-group">
+						<label for="stairlift">Ladderlift</label>
+						<input type="checkbox" id="stairlift" name="stairlift" value="stairlift">
+					</div><!-- /checkbox-group -->
+
+					<div class="checkbox-group">
+						<label for="loading">In- en uitpakken</label>
+						<input type="checkbox" id="loading" name="loading" value="loading">
+					</div><!-- /checkbox-group -->
+
+					<div class="checkbox-group">
+						<label for="cleaning">Schoonmaken</label>
+						<input type="checkbox" id="cleaning" name="stairlift" value="stairlift">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="assembly">(De)montage</label>
+						<input type="checkbox" id="assembly" name="assembly" value="assembly">
+					</div><!-- /checkbox-group -->
+
+				</fieldset>
+
+				<label for="no_movers">Aantal verhuizers</label>
+				<input type="number" id="no_movers" name="no_movers">
+
+				<label for="remarks">Opmerkingen</label>
+				<textarea name="remarks" id="remarks"></textarea>
+
+			</fieldset>
+
+			<!--<input type="submit" id="submit">-->
+			<button id="submit">Versturen</button>
 		</form>
 	</main>
 

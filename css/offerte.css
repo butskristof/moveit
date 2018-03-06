@@ -1,0 +1,59 @@
+form {
+	width: 65%;
+	margin: 0 auto;
+}
+
+fieldset {
+	margin: 20px 0;
+}
+
+label, input {
+	display: inline-block;
+	padding: 5px 0;
+}
+
+label {
+	width: 30%;
+	text-align: right;
+	vertical-align: top;
+}
+
+input, select, textarea {
+	width: 50%;
+	margin: 0 10% 0 4%;
+	vertical-align: middle;
+}
+
+textarea {
+	height: 5em;
+	margin-top: 10px;
+	resize: none;
+}
+
+#submit {
+	width: 100%;
+	margin: 0;
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+@media (max-width: 768px) {
+	form {
+		width: 100%;
+	}
+
+	label, input, select, textarea {
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+
+	.checkbox-group {
+		display: block;
+	}
+
+	.checkbox-group label, .checkbox-group input {
+		width: 30%;
+	}
+}
+
