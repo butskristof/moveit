@@ -14,7 +14,7 @@ label, input {
 
 label {
 	width: 30%;
-	text-align: right;
+	/*text-align: right;*/
 	vertical-align: top;
 }
 
