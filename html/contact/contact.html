@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact - Move-it</title>
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/contact.css">
+</head>
+<body>
+<header>
+	<div class="content">
+		<img src="../../images/logo/logo2.svg" alt="Move-it logo" />
+		<div class="text">
+			<h1>
+				Move-it
+			</h1>
+			<p>Masters in moving</p>
+		</div><!-- /text -->
+	</div><!-- /content -->
+</header>
+<nav>
+	<h2>Menu</h2>
+	<ul>
+		<li><a href="../../index.html">Home</a></li>
+		<li><a href="#">Geschiedenis</a></li>
+		<li><a href="#">Offerte aanvragen</a></li>
+		<li><a href="#">Verhuur</a></li>
+		<li><a href="#">Stappenplan verhuis</a></li>
+		<li><a href="#" class="active">Contact</a></li>
+	</ul>
+</nav>
+<main>
+	<h2>Contact</h2>
+
+	<section>
+		<h3>Contactgegevens</h3>
+		<dl>
+			<dt>Bedrijfsnaam</dt>
+			<dd>Move-it bvba</dd>
+			<dt>Zaakvoerder</dt>
+			<dd>Kristof Buts</dd>
+			<dt>Telefoonnummer</dt>
+			<dd>+32 12 34 56 78</dd>
+			<dt>BTW-nummer</dt>
+			<dd>BE0</dd>
+		</dl>
+	</section>
+
+	<section>
+		<h3>Ligging</h3>
+
+		<address>
+			Nationalestraat 5<br>
+			2000 Antwerpen<br>
+			Belgi&euml;<br>
+			+32 12 34 56 78
+		</address>
+
+		<div class="mapcontainer">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.7036577194192!2d4.402918458550463!3d51.21856052595711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6f6d16cb7fb%3A0xfc5f09fa2a5e0ae9!2sCampus+Groenplaats+-+KdG+(Karel+de+Grote+Hogeschool)!5e0!3m2!1sen!2sbe!4v1520377251128" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div><!-- /mapcontainer -->
+	</section>
+	<section>
+		<h3>Contactformulier</h3>
+		<form action="contact_sent.html">
+
+			<label for="name">Naam</label>
+			<input type="text" name="name" id="name">
+
+			<label for="email">E-mail</label>
+			<input type="text" name="email" id="email">
+
+			<label for="question">Uw vraag</label>
+			<textarea name="question" id="question"></textarea>
+
+			<button id="submit">Verzenden</button>
+		</form>
+	</section>
+</main>
+<footer>
+	<address>
+		<!--TODO check semantics-->
+		Move-it bvba<br>
+		Nationalestraat 5<br>
+		2000 Antwerpen<br>
+		Belgi&euml;<br>
+		+32 12 34 56 78
+	</address>
+	<small>
+		&copy; 2018 Move-it bvba
+	</small>
+</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.mapcontainer {
+	margin: 10px 0;
+	position: relative;
+	padding-bottom: 33%; /* aspect ratio */
+	height: 0;
+	overflow: hidden;
+}
+.mapcontainer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+form {
+	width: 65%;
+}
+
+label, input {
+	display: inline-block;
+	padding: 5px 0;
+	margin: 2px 0;
+	vertical-align: top;
+}
+
+label {
+	width: 30%;
+}
+
+input, select, textarea {
+	width: 50%;
+	margin: 0 10% 0 4%;
+}
+
+textarea {
+	height: 10em;
+	margin-top: 5px;
+	resize: none;
+}
+
+#submit {
+	width: 50%;
+	margin: 10px 0;
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+@media (max-width: 768px) {
+	form {
+		width: 100%;
+	}
+
+	label, input, select, textarea {
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+
+}
