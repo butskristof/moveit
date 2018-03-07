@@ -44,8 +44,8 @@ a:hover {
 	color: grey;
 }
 
-/* button styling in forms*/
-form button {
+/* button styling */
+button {
 	background-color: #e7e7e7;
 	color: black;
 	border: none;
@@ -54,6 +54,20 @@ form button {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 1.2rem;
+}
+
+/*CONFIRMATION STYLING*/
+p.form_done {
+	background: lightgreen;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+p.form_done img {
+	display: inline;
+	height: 3em;
+	vertical-align: middle;
+	margin-right: 10px;
 }
 
 @media (max-width: 960px) {
