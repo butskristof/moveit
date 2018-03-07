@@ -1,0 +1,21 @@
+h3 {
+	clear: both;
+}
+
+p {
+	text-align: justify;
+}
+
+main img {
+	width: 150px;
+}
+
+#img1, #img3 {
+	margin: 0 5px 0 0;
+	float: left;
+}
+
+#img2 {
+	margin: 0 0 0 5px;
+	float: right;
+}
