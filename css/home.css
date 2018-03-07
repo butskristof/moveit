@@ -8,7 +8,7 @@ Styling specific for home page
 	height: 400px;
 	background: url("../images/building.jpg") fixed center top;
 	background-size: cover;
-	padding: 50px; /* inwards padding */
+	padding: 50px;
 	text-align: justify;
 
 	color: white; /* make text readable over picture */
@@ -29,7 +29,7 @@ Styling specific for home page
 }
 
 @media (max-width: 480px) {
-	/*make overlay fill the whole image*/
+	/*make overlay fill the whole image on mobile and decrease size to better accomodate for limited height*/
 	.about {
 		padding: 0;
 		height: 300px;
@@ -58,11 +58,18 @@ Styling specific for home page
 }
 
 #news a {
+	/*styling articles to not stand out as classic links*/
 	color: black;
 	text-decoration: none;
 }
 
+#news a:hover {
+	/*add a visual element to the links*/
+	color: grey;
+}
+
 .col {
+	/* make news columns responsive */
 	display: inline-block;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -72,10 +79,12 @@ Styling specific for home page
 }
 
 .col img {
+	/*style imgs in news columns to center on their own line*/
 	display: block;
 	width: 95%;
 	margin: 0 auto;
 
+	/*rounded corners*/
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -85,12 +94,13 @@ Styling specific for home page
 	text-align: justify;
 }
 
+/*different possibilities for spanning*/
 .span_3_of_3 { width: 100%; }
 .span_2_of_3 { width: 49%; }
 .span_1_of_3 { width: 32.26%; }
 
 @media (max-width: 480px) {
-	/*responsive: full width and stacked*/
+	/*responsive: columns become full width and get stacked*/
 	.col {
 		margin: 1% 0;
 	}

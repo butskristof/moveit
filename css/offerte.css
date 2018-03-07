@@ -1,4 +1,7 @@
+/* FORM STYLING */
+
 form {
+	/*center in page*/
 	width: 65%;
 	margin: 0 auto;
 }
@@ -11,6 +14,8 @@ label, input {
 	display: inline-block;
 	padding: 5px 0;
 }
+
+/* labels and inputs are aligned on the same line on bigger screens */
 
 label {
 	width: 30%;
@@ -25,6 +30,7 @@ input, select, textarea {
 }
 
 textarea {
+	/* taller box + no resizing since it messed up the styling */
 	height: 5em;
 	margin-top: 10px;
 	resize: none;
@@ -33,11 +39,10 @@ textarea {
 #submit {
 	width: 100%;
 	margin: 0;
-	font-size: 1.5em;
-	padding: 10px;
 }
 
 @media (max-width: 768px) {
+	/* labels and inputs get stacked */
 	form {
 		width: 100%;
 	}
@@ -48,6 +53,7 @@ textarea {
 		text-align: left;
 	}
 
+	/* checkboxes are kept together with their labels */
 	.checkbox-group {
 		display: block;
 	}

@@ -31,6 +31,31 @@ h2 {
 	background: grey;
 }
 
+/* black to suit colour scheme better, underlined for visual hint */
+a {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: grey;
+}
+
+/* button styling in forms*/
+form button {
+	background-color: #e7e7e7;
+	color: black;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.2rem;
+}
+
 @media (max-width: 960px) {
 	/*adjust for user agent stylesheets on mobile */
 	body > header, nav, .about {
@@ -89,6 +114,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	background-color: rgba(0, 0, 0, 0.1);
+	color: black; /* undo grey hovering on rest of body */
 }
 
 nav ul li a.active {
@@ -117,14 +143,12 @@ footer {
 }
 
 footer address {
-	/*float: left;*/
 	display: inline-block;
 	vertical-align: top;
 	width: 49%;
 }
 
 footer small {
-	/*float: right;*/
 	display: inline-block;
 	vertical-align: top;
 	width: 49%;
