@@ -28,6 +28,7 @@ Styling specific for home page
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
+
 @media (max-width: 480px) {
 	/*make overlay fill the whole image on mobile and decrease size to better accomodate for limited height*/
 	.about {
@@ -68,44 +69,8 @@ Styling specific for home page
 	color: grey;
 }
 
-.col {
-	/* make news columns responsive */
-	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	vertical-align: top;
-	padding: 0 0.8% 0 0.8%;
-}
-
-.col img {
-	/*style imgs in news columns to center on their own line*/
-	display: block;
-	width: 95%;
-	margin: 0 auto;
-
-	/*rounded corners*/
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.col p {
-	text-align: justify;
-}
-
-/*different possibilities for spanning*/
-.span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 49%; }
-.span_1_of_3 { width: 32.26%; }
-
-@media (max-width: 480px) {
-	/*responsive: columns become full width and get stacked*/
-	.col {
-		margin: 1% 0;
-	}
-
-	.span_1_of_3, .span_2_of_3, .span_3_of_3 {
-		width: 100%;
-	}
+.newsbtn {
+	width: 100%;
+	padding: 10px;
+	float: bottom;
 }

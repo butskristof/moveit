@@ -83,20 +83,20 @@ body > header {
 	height: 80px;
 }
 
-header img {
+body > header img {
 	/*make img fit in header*/
 	height: 60px;
 	float: left;
 	padding: 10px;
 }
 
-header .text {
+body > header .text {
 	/*vertically center text in header*/
 	display: inline-block;
 	vertical-align: middle;
 }
 
-header h1 {
+body > header h1 {
 	/*adjust margins to fit in header */
 	margin-top: 10px;
 	margin-bottom: -10px;
@@ -167,4 +167,47 @@ footer small {
 	vertical-align: top;
 	width: 49%;
 	text-align: right;
+}
+
+/* COLUMNS */
+.col {
+	/* make news columns responsive */
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: top;
+	padding: 0 0.8% 0 0.8%;
+}
+
+.col img {
+	/*style imgs in news columns to center on their own line*/
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+
+	/*rounded corners*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.col p {
+	text-align: justify;
+}
+
+/*different possibilities for spanning*/
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 49%; }
+.span_1_of_3 { width: 32.26%; }
+
+@media (max-width: 480px) {
+	/*responsive: columns become full width and get stacked*/
+	.col {
+		margin: 1% 0;
+	}
+
+	.span_1_of_3, .span_2_of_3, .span_3_of_3 {
+		width: 100%;
+	}
 }
