@@ -62,7 +62,7 @@
 				<input type="tel" id="phone" name="phone" pattern="^0[1-9][0-9]{7,8}$">
 
 				<label for="email">E-mailadres</label>
-				<input type="text" id="email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z][a-z]+$" required>
+				<input type="email" id="email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z][a-z]+$" required>
 
 			</fieldset>
 
@@ -85,7 +85,7 @@
 				<input type="text" id="addressFrom_place" name="addressFrom_place">
 
 				<label for="addressFrom_stories">Aantal verdiepingen</label>
-				<input type="text" id="addressFrom_stories" name="addressFrom_stories">
+				<input type="number" id="addressFrom_stories" name="addressFrom_stories" min="0">
 
 			</fieldset>
 
@@ -108,7 +108,7 @@
 				<input type="text" id="addressTo_place" name="addressTo_place">
 
 				<label for="addressTo_stories">Aantal verdiepingen</label>
-				<input type="text" id="addressTo_stories" name="addressTo_stories">
+				<input type="number" id="addressTo_stories" name="addressTo_stories" min="0">
 			</fieldset>
 			
 			<fieldset>
