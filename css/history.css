@@ -10,10 +10,14 @@ p {
 /* img formatting */
 
 main img {
-	width: 150px;
+	width: 250px;
 }
 
-/* alternating left and right, not possible with nth-child(even) since they're not sibling */
+figcaption {
+	font-style: italic;
+}
+
+/* alternating left and right, not possible with nth-child(even) since they're not siblings */
 #img1, #img3 {
 	margin: 0 5px 0 0;
 	float: left;

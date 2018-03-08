@@ -46,6 +46,7 @@ textarea {
 
 #submit {
 	width: 100%;
+	margin: 10px 0;
 }
 
 @media (max-width: 768px) {
