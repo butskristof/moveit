@@ -6,8 +6,7 @@ Styling specific for home page
 .about {
 	/*Bootstrap-style jumbotron with parallax effect*/
 	height: 400px;
-	background: url("../images/building.jpg") fixed center top;
-	background-size: cover;
+	background: url("../images/building_bg.jpg") fixed center top;
 	padding: 50px;
 	text-align: justify;
 
@@ -15,7 +14,6 @@ Styling specific for home page
 }
 
 .about .content {
-	/*TODO make text more readable*/
 	/*overlay for welcome text*/
 	padding: 10px 20px;
 	/*get rounded corners on overlay*/
@@ -25,12 +23,12 @@ Styling specific for home page
 
 	line-height: 1.2;
 
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.45);
 }
 
 
 @media (max-width: 480px) {
-	/*make overlay fill the whole image on mobile and decrease size to better accomodate for limited height*/
+	/*make overlay fill the whole image on mobile and decrease size to better accommodate for limited height*/
 	.about {
 		padding: 0;
 		height: 300px;

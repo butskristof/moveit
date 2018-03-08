@@ -11,6 +11,12 @@ figcaption {
 	text-align: center;
 }
 
+@media (max-width: 480px) {
+	figure {
+		margin: 0 10px;
+	}
+}
+
 article p:first-of-type {
 	font-weight: bold;
 }
