@@ -56,6 +56,25 @@ button {
 	font-size: 1.2rem;
 }
 
+/*buttons can't be used in a tags*/
+p.btn {
+	/*-webkit-appearance: button;*/
+	/*-moz-appearance: button;*/
+	/*appearance: button;*/
+
+	background-color: #e7e7e7;
+	color: black;
+	border: none;
+	padding: 15px 32px;
+	text-align: center !important;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.2rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /*CONFIRMATION STYLING*/
 p.form_done {
 	background: lightgreen;
